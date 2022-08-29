@@ -15,7 +15,7 @@ function calculateEmi() {
   let noOfMonth = 0;
 
   if (isYear == "" && isMonth == "") {
-    alert("Please select loan duration Month or Year");
+    alert("Loan Amount, Duration, Month or Year are required!");
   } else {
     if (isYear == true) {
       noOfMonth = loanDuration.value * 12;
@@ -32,10 +32,10 @@ function calculateEmi() {
     let totalInterest = EMI * n - p;
     let totalPayment = totalInterest + parseFloat(p);
 
-    document.querySelector("#emi").innerText = "Rs " + Math.round(EMI);
+    document.querySelector("#emi").innerText = "Rs. " + Math.round(EMI) + "/-";
     document.querySelector("#totalIntrest").innerText =
-      "Rs " + Math.round(totalInterest);
+      "Rs. " + Math.round(totalInterest) + "/-";
     document.querySelector("#totalPayment").innerText =
-      "Rs " + Math.round(totalPayment);
+      "Rs. " + Math.round(totalPayment) + "/-";
   }
 }
