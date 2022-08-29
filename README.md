@@ -1,3 +1,4 @@
 # EMI-Calculator
 
-![image](https://user-images.githubusercontent.com/76105799/187127208-ca5316b4-c63e-4a0d-93b8-ac5ea93bb6ee.png)
+![image](https://user-images.githubusercontent.com/76105799/187127288-6a0a7805-9503-405b-a88e-b64519ed9650.png)
+
