@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Roboto:wght@400;500&display=swap");
+* {
+  margin: 0;
+  left: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 75%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  width: 600px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 2rem 2.1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.1rem;
+}
+.input_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+.input_container label {
+  font-size: 1.4rem;
+  font-weight: 450;
+}
+.input_container input {
+  border: none;
+  outline: none;
+  width: 40%;
+  padding: 0.3rem 1rem;
+  border-radius: 0.5rem;
+}
+.submit_container {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+#calculate {
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  margin-top: 1.5rem;
+  transition: 0.5s ease;
+}
+#loanDuration {
+  width: 6rem;
+  margin-left: 6rem;
+}
+.radio_container {
+  display: flex;
+  margin-left: 0;
+}
+.radio_container input[type="radio"] {
+  display: none;
+}
+.radio_container label {
+  border-right: 2px solid var(--bg);
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.output {
+  margin-top: 2rem;
+}
+.output p {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+.output p span {
+  float: right;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+}
+@media (max-width: 400px) {
+  .container {
+    margin-top: -5rem;
+  }
+  html {
+    font-size: 55%;
+  }
+  #loanDuration {
+    margin-left: 12rem;
+  }
+}
