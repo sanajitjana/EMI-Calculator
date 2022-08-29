@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --bg: #008080;
+  --bg-hover: #008080;
+}
 html {
   font-size: 75%;
 }
@@ -25,6 +29,7 @@ h1 {
   text-align: center;
   margin-bottom: 2rem;
   letter-spacing: 0.1rem;
+  margin-bottom: 50px;
 }
 .input_container {
   display: flex;
@@ -37,25 +42,28 @@ h1 {
   font-weight: 450;
 }
 .input_container input {
-  border: none;
-  outline: none;
   width: 40%;
   padding: 0.3rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
 }
 .submit_container {
   display: flex;
   justify-content: center;
   border-radius: 0.5rem;
-  border: none;
-  outline: none;
 }
 #calculate {
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 10px 15px;
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.1rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   transition: 0.5s ease;
+  background-color: teal;
+  color: white;
+  margin-bottom: 20px;
 }
 #loanDuration {
   width: 6rem;
@@ -69,10 +77,20 @@ h1 {
   display: none;
 }
 .radio_container label {
+  background-color: #fff;
+  color: var(--bg);
   border-right: 2px solid var(--bg);
   padding: 0.1rem 0.5rem;
   cursor: pointer;
   transition: 0.5s ease;
+}
+.radio_container label:hover {
+  background-color: var(--bg-hover);
+  color: #fff;
+}
+.radio_container input[type="radio"]:checked + label {
+  background-color: var(--bg-hover);
+  color: #fff;
 }
 .output {
   margin-top: 2rem;
